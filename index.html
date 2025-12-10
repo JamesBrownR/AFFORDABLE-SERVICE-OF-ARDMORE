@@ -15,7 +15,7 @@
     <nav style="background: white; padding: 15px 0; border-bottom: 4px solid var(--primary-blue);">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <a href="index.html" class="logo">
-                <img src="Logo.png" alt="Affordable Service of Ardmore" style="height: 60px;">
+                <img src="/Pics/Logo.png" alt="Affordable Service of Ardmore" style="height: 60px;">
             </a>
             <ul style="display: flex; gap: 20px; font-weight: 600;">
                 <li><a href="index.html" class="text-blue">Home</a></li>
@@ -268,20 +268,90 @@
             }
         ];
 
-        const reviewsContainer = document.getElementById('reviews-container');
+          const galleryData = [
+            {src: "GDS1.webp", alt: "Heavy Duty Engine Repair"},
+            {src: "GDS2.webp", alt: "Heavy Duty Engine Repair"},
+                {src: "GDS3.webp", alt: "Heavy Duty Engine Repair"},
+                {src: "GDS4.webp", alt: "Heavy Duty Engine Repair"},
+                {src: "GDS5.webp", alt: "Heavy Duty Engine Repair"},
+                {src: "GDS6.webp", alt: "Heavy Duty Engine Repair"},
+              {src: "GDS7.webp", alt: "Heavy Duty Engine Repair"},
+              {src: "GDS8.webp", alt: "Heavy Duty Engine Repair"},
+        ];
 
-        reviews.forEach(review => {
-            const reviewHTML = `
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>"${review.text}"</p>
-                    <div class="review-author">- ${review.author}</div>
+        // --- RENDER FUNCTIONS ---
+
+        // Render Reviews
+       // --- RENDER FUNCTIONS ---
+
+// Render Reviews with Show More/Less functionality
+const reviewsContainer = document.getElementById('reviews-container');
+const showMoreBtn = document.getElementById('show-more-btn');
+const REVIEWS_PER_BATCH = 6;
+let currentReviewIndex = 0;
+
+function renderReviews(count) {
+    const endIndex = Math.min(currentReviewIndex + count, reviewsData.length);
+    
+    for(let i = currentReviewIndex; i < endIndex; i++) {
+        const review = reviewsData[i];
+        
+        // Create star string
+        let starHtml = '';
+        for(let j = 0; j < review.rating; j++) {
+            starHtml += '<i class="fas fa-star"></i>';
+        }
+
+        const reviewHtml = `
+            <div class="review-card">
+                <div class="stars">${starHtml}</div>
+                <p class="review-text">"${review.body}"</p>
+                <p class="review-author">- ${review.name}</p>
+            </div>
+        `;
+        reviewsContainer.innerHTML += reviewHtml;
+    }
+    
+    currentReviewIndex = endIndex;
+    
+    // Update button visibility and text
+    if (currentReviewIndex >= reviewsData.length) {
+        showMoreBtn.textContent = 'Show Less Reviews';
+    } else {
+        showMoreBtn.style.display = 'inline-block';
+    }
+}
+
+// Show More/Less button click handler
+showMoreBtn.addEventListener('click', function() {
+    if (currentReviewIndex >= reviewsData.length) {
+        // Reset to show only first 6
+        reviewsContainer.innerHTML = '';
+        currentReviewIndex = 0;
+        renderReviews(REVIEWS_PER_BATCH);
+        showMoreBtn.textContent = 'Show More Reviews';
+    } else {
+        // Show next batch
+        renderReviews(REVIEWS_PER_BATCH);
+    }
+});
+
+// Initial load - show first 6 reviews
+renderReviews(REVIEWS_PER_BATCH);
+
+        // Render Gallery
+        const galleryContainer = document.getElementById('gallery-container');
+
+        galleryData.forEach(img => {
+            const imgHtml = `
+                <div class="gallery-item">
+                    <img src="${img.src}" alt="${img.alt}">
                 </div>
             `;
-            reviewsContainer.innerHTML += reviewHTML;
+            galleryContainer.innerHTML += imgHtml;
         });
+
     </script>
+
 </body>
 </html>
