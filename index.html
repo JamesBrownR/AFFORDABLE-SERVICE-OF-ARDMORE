@@ -627,7 +627,7 @@ description: Mobile RV repair, onsite shop, consignment sales, and 24/7 roadside
         // Render Reviews
        // --- RENDER FUNCTIONS ---
 
-// Render Reviews with Show More/Less functionality
+// --- RENDER REVIEWS ---
 const reviewsContainer = document.getElementById('reviews-container');
 const showMoreBtn = document.getElementById('show-more-btn');
 const REVIEWS_PER_BATCH = 6;
@@ -657,42 +657,28 @@ function renderReviews(count) {
     
     currentReviewIndex = endIndex;
     
-    // Update button visibility and text
+    // Update button text based on current state
     if (currentReviewIndex >= reviewsData.length) {
         showMoreBtn.textContent = 'Show Less Reviews';
     } else {
-showMoreBtn.classList.remove('hidden');    }
+        showMoreBtn.textContent = 'Show More Reviews';
+    }
 }
 
 // Show More/Less button click handler
 showMoreBtn.addEventListener('click', function() {
     if (currentReviewIndex >= reviewsData.length) {
-        // Reset to show only first 6
+        // Reset to show only first batch
         reviewsContainer.innerHTML = '';
         currentReviewIndex = 0;
         renderReviews(REVIEWS_PER_BATCH);
-        showMoreBtn.textContent = 'Show More Reviews';
     } else {
         // Show next batch
         renderReviews(REVIEWS_PER_BATCH);
     }
 });
 
-// Initial load - show first 6 reviews
+// Initial load - show first batch of reviews
 renderReviews(REVIEWS_PER_BATCH);
-
-        // Render Gallery
-        const galleryContainer = document.getElementById('gallery-container');
-
-        galleryData.forEach(img => {
-            const imgHtml = `
-                <div class="gallery-item">
-                    <img src="${img.src}" alt="${img.alt}">
-                </div>
-            `;
-            galleryContainer.innerHTML += imgHtml;
-        });
-
-    </script>
 
 </body>
