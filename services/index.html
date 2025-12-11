@@ -4,123 +4,321 @@ title: Our Services | Affordable Service of Ardmore
 description: Engine repair, roof AC, plumbing, and more.
 ---
 
-<div class="bg-brand-blue py-20 text-center text-white">
-    <div class="container mx-auto px-6">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto">Complete care for your RV. From the engine to the roof, we have you covered.</p>
+<!-- Hero Section with Background Image -->
+<header class="relative h-[100vh] flex items-center justify-center text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?q=80&w=2074&auto=format&fit=crop" 
+             alt="RV Service" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/95 to-brand-blue/70"></div>
     </div>
-</div>
 
-<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Complete RV Care</h1>
+            <p class="text-xl text-gray-200 mb-8">From the engine to the roof, we have you covered. Over 20 years of expert service in Ardmore, OK.</p>
+            <a href="tel:5802264716" class="inline-block bg-brand-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
+                <i class="fas fa-phone-alt mr-2"></i> Call (580) 226-4716
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Trust Badges -->
+<section class="py-8 bg-white border-b border-gray-200">
     <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center items-center gap-8 text-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-brand-blue">
+                    <i class="fas fa-award text-xl"></i>
+                </div>
+                <div class="text-left">
+                    <p class="font-bold text-gray-800">20+ Years</p>
+                    <p class="text-sm text-gray-600">Experience</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center text-brand-red">
+                    <i class="fas fa-shield-alt text-xl"></i>
+                </div>
+                <div class="text-left">
+                    <p class="font-bold text-gray-800">Warranty Filing</p>
+                    <p class="text-sm text-gray-600">We Handle It</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-green-600">
+                    <i class="fas fa-clock text-xl"></i>
+                </div>
+                <div class="text-left">
+                    <p class="font-bold text-gray-800">24/7 Roadside</p>
+                    <p class="text-sm text-gray-600">Always Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Services Grid -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-blue mb-4">Our Services</h2>
+            <p class="text-lg text-gray-600">Professional workmanship for all your RV needs. We handle everything from basic maintenance to major repairs.</p>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-brand-red">
                 <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-brand-red text-xl flex-shrink-0">
                     <i class="fas fa-engine"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Engine Repair</h3>
-                    <p class="text-gray-600">Heavy duty engine diagnostics and repair to keep your motorhome running smoothly.</p>
+                    <p class="text-gray-600 mb-3">Heavy duty engine diagnostics and repair to keep your motorhome running smoothly.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Diagnostics & Repairs</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-blue-500">
                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-brand-blue text-xl flex-shrink-0">
                     <i class="fas fa-snowflake"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Roof AC Installation</h3>
-                    <p class="text-gray-600">Installation of new units and repair of existing air conditioning systems.</p>
+                    <p class="text-gray-600 mb-3">Installation of new units and repair of existing air conditioning systems.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Install & Repair</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-yellow-500">
                 <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center text-yellow-600 text-xl flex-shrink-0">
                     <i class="fas fa-bolt"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Generator Maintenance</h3>
-                    <p class="text-gray-600">Oil changes, tune-ups, and repairs for Onan and other major generator brands.</p>
+                    <p class="text-gray-600 mb-3">Oil changes, tune-ups, and repairs for Onan and other major generator brands.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ All Major Brands</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-blue-500">
                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-brand-blue text-xl flex-shrink-0">
                     <i class="fas fa-faucet"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Plumbing Solutions</h3>
-                    <p class="text-gray-600">Leak repairs, tank replacements, and fixture updates for kitchen and bath.</p>
+                    <p class="text-gray-600 mb-3">Leak repairs, tank replacements, and fixture updates for kitchen and bath.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Leaks & Fixtures</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-gray-400">
                 <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 text-xl flex-shrink-0">
                     <i class="fas fa-temperature-low"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Refrigerator Servicing</h3>
-                    <p class="text-gray-600">Troubleshooting and repair for absorption and residential style RV fridges.</p>
+                    <p class="text-gray-600 mb-3">Troubleshooting and repair for absorption and residential style RV fridges.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ All Fridge Types</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-brand-red">
                 <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-brand-red text-xl flex-shrink-0">
                     <i class="fas fa-expand-arrows-alt"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Slide-out Repairs</h3>
-                    <p class="text-gray-600">Hydraulic and electric slide maintenance, seal replacement, and motor repair.</p>
+                    <p class="text-gray-600 mb-3">Hydraulic and electric slide maintenance, seal replacement, and motor repair.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Hydraulic & Electric</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-gray-800">
                 <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-gray-800 text-xl flex-shrink-0">
                     <i class="fas fa-truck-monster"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Tire Repair</h3>
-                    <p class="text-gray-600">Tire changes, pressure checks, and wheel maintenance to keep you safe.</p>
+                    <p class="text-gray-600 mb-3">Tire changes, pressure checks, and wheel maintenance to keep you safe.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Safety First</span>
                 </div>
             </div>
 
-             <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+             <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-blue-500">
                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-brand-blue text-xl flex-shrink-0">
                     <i class="fas fa-search"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Roof Inspections</h3>
-                    <p class="text-gray-600">Prevent water damage with thorough roof inspections and sealant touch-ups.</p>
+                    <p class="text-gray-600 mb-3">Prevent water damage with thorough roof inspections and sealant touch-ups.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Prevent Leaks</span>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
-                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-brand-red text-xl flex-shrink-0">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-orange-500">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-orange-600 text-xl flex-shrink-0">
                     <i class="fas fa-fire"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Furnace Repairs</h3>
-                    <p class="text-gray-600">Heating system diagnostics, cleaning, and repair for cold weather camping.</p>
+                    <p class="text-gray-600 mb-3">Heating system diagnostics, cleaning, and repair for cold weather camping.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Stay Warm</span>
                 </div>
             </div>
             
-            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition flex items-start gap-4 border-l-4 border-green-500">
                 <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 text-xl flex-shrink-0">
                     <i class="fas fa-car-battery"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brand-blue mb-2">Battery Replacement</h3>
-                    <p class="text-gray-600">House and chassis battery testing, replacement, and upgrades.</p>
+                    <p class="text-gray-600 mb-3">House and chassis battery testing, replacement, and upgrades.</p>
+                    <span class="text-sm text-brand-red font-semibold">→ Power Solutions</span>
                 </div>
             </div>
 
         </div>
+    </div>
+</section>
 
-        <div class="mt-16 text-center">
-            <h2 class="text-2xl font-bold mb-4">Need Service Now?</h2>
-            <a href="tel:5802264716" class="inline-block bg-brand-red text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition">
-                Call (580) 226-4716
+<!-- How We Work Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-blue mb-4">How We Work</h2>
+            <p class="text-gray-600">Simple, transparent process from start to finish</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                    1
+                </div>
+                <h3 class="font-bold text-lg mb-2">Contact Us</h3>
+                <p class="text-gray-600 text-sm">Call or visit our shop to describe your RV issue</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                    2
+                </div>
+                <h3 class="font-bold text-lg mb-2">Diagnosis</h3>
+                <p class="text-gray-600 text-sm">We inspect and provide a detailed estimate</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                    3
+                </div>
+                <h3 class="font-bold text-lg mb-2">Quality Repair</h3>
+                <p class="text-gray-600 text-sm">Expert technicians fix your RV right the first time</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                    4
+                </div>
+                <h3 class="font-bold text-lg mb-2">Back on the Road</h3>
+                <p class="text-gray-600 text-sm">Get back to your adventures with confidence</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Areas & Emergency CTA -->
+<section class="py-20 bg-gradient-to-r from-brand-blue to-gray-900 text-white">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Mobile Service Available</h2>
+                <p class="text-gray-300 mb-6 text-lg">Broke down? We come to you! We service a 60-mile radius from Ardmore, OK for most repairs.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-brand-red mr-3"></i>
+                        <span>On-site diagnostics and repairs</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-brand-red mr-3"></i>
+                        <span>60-mile service radius</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-brand-red mr-3"></i>
+                        <span>Save time and hassle</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+                <h3 class="text-2xl font-bold mb-4">24/7 Emergency Service</h3>
+                <p class="text-gray-300 mb-6">Need help right now? We're here for you around the clock.</p>
+                <a href="tel:5807689544" class="block bg-brand-red hover:bg-red-700 text-center text-white font-bold py-4 px-6 rounded-lg transition mb-4">
+                    <i class="fas fa-phone-volume mr-2"></i> Call After Hours: (580) 768-9544
+                </a>
+                <a href="tel:5802264716" class="block bg-white/20 hover:bg-white/30 text-center text-white font-bold py-4 px-6 rounded-lg transition">
+                    <i class="fas fa-phone mr-2"></i> Regular Hours: (580) 226-4716
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-brand-blue mb-12">What Our Customers Say</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <div class="flex mb-4">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-600 mb-4">"Fred and his team saved our vacation! Our AC went out in 90 degree weather and they came right to our campsite."</p>
+                <p class="font-semibold text-brand-blue">- Sarah J.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <div class="flex mb-4">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-600 mb-4">"Honest pricing and great workmanship. I took my 5th wheel in for a remodel and the flooring looks amazing."</p>
+                <p class="font-semibold text-brand-blue">- Mike T.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <div class="flex mb-4">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-600 mb-4">"Highly recommend for inspections. They found issues I would have never noticed before buying my used RV."</p>
+                <p class="font-semibold text-brand-blue">- David L.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 bg-brand-blue text-white text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-4">Ready to Get Your RV Fixed?</h2>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Don't let RV problems ruin your travel plans. Call us today or stop by our shop.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:5802264716" class="inline-block bg-brand-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition">
+                <i class="fas fa-phone mr-2"></i> Call Now
+            </a>
+            <a href="/#contact" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-4 px-8 rounded-lg transition">
+                <i class="fas fa-map-marker-alt mr-2"></i> Visit Our Shop
             </a>
         </div>
     </div>
