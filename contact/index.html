@@ -5,140 +5,181 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
 ---
 
 <style>
-/* Contact Page Specific Styles */
+/* --- Modern Variables & Reset --- */
+:root {
+    --brand-blue: #000080;
+    --brand-red: #d60000;
+    --brand-red-hover: #b30000;
+    --gray-light: #f3f4f6;
+    --gray-text: #4b5563;
+    --white: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
+/* --- Hero Section --- */
+.contact-hero {
+    background-color: var(--brand-blue);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 0;
+}
 
 .contact-hero h1 {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .contact-hero p {
     font-size: 1.25rem;
-    color: #e5e7eb;
+    color: #e0e7ff; /* Light blue-white */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
+/* --- Main Layout --- */
 .contact-section {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background-color: white;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr; /* Form slightly wider */
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
+/* --- Contact Info Column --- */
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
-.contact-info h2 {
+.section-title {
     font-size: 2rem;
-    color: #000080;
-    margin-bottom: 1rem;
+    color: var(--brand-blue);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-.contact-info p {
-    color: #4b5563;
-    line-height: 1.75;
-    margin-bottom: 2rem;
+.section-desc {
+    color: var(--gray-text);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .info-item {
     display: flex;
-    align-items: start;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: #f9fafb;
-    border-radius: 0.5rem;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 .info-item:hover {
-    background: #f3f4f6;
-    transform: translateX(5px);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--brand-blue);
 }
 
 .info-icon {
-    width: 3rem;
-    height: 3rem;
-    background: #000080;
-    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #eff6ff; /* Very light blue */
+    color: var(--brand-blue);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     flex-shrink: 0;
+}
+
+/* Facebook specific styling */
+.fb-icon {
+    background: #e7f5ff;
+    color: #1877F2;
 }
 
 .info-content strong {
     display: block;
-    color: #1f2937;
+    color: #111827;
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .info-content span,
 .info-content a {
-    color: #6b7280;
-}
-
-.info-content a {
-    color: #000080;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: var(--gray-text);
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .info-content a:hover {
-    color: #d60000;
+    color: var(--brand-red);
+    text-decoration: underline;
 }
 
+/* --- Emergency Box --- */
 .emergency-box {
-    background: linear-gradient(135deg, #d60000 0%, #b30000 100%);
+    background: linear-gradient(135deg, var(--brand-red) 0%, #a00000 100%);
     color: white;
     padding: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
 }
 
 .emergency-box h3 {
     font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 0.5rem;
-}
-
-.emergency-box p {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .emergency-box a {
     color: white;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.25rem;
+    font-weight: 800;
     display: block;
     margin-top: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.2s;
 }
 
-.contact-form {
-    background: #f9fafb;
+.emergency-box a:hover {
+    transform: scale(1.05);
+}
+
+/* --- Contact Form --- */
+.contact-form-wrapper {
+    background: var(--gray-light);
     padding: 2.5rem;
-    border-radius: 0.5rem;
-    border-top: 4px solid #d60000;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
 }
 
-.contact-form h3 {
+.contact-form-wrapper h3 {
     font-size: 1.75rem;
-    color: #000080;
+    color: var(--brand-blue);
     margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 
 .form-group {
@@ -150,17 +191,19 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
     color: #374151;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 0.375rem;
+    padding: 0.875rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    background: white;
     font-family: inherit;
 }
 
@@ -168,13 +211,8 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #000080;
-    box-shadow: 0 0 0 3px rgba(0, 0, 128, 0.1);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 150px;
+    border-color: var(--brand-blue);
+    box-shadow: 0 0 0 4px rgba(0, 0, 128, 0.1);
 }
 
 .form-row {
@@ -185,7 +223,7 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
 
 .submit-btn {
     width: 100%;
-    background: #d60000;
+    background: var(--brand-red);
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -194,61 +232,66 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .submit-btn:hover {
-    background: #b30000;
+    background: var(--brand-red-hover);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(214, 0, 0, 0.3);
 }
 
+/* --- Map Section --- */
 .map-section {
-    padding: 0;
+    width: 100%;
     height: 450px;
+    margin-top: 2rem;
 }
 
 .map-section iframe {
     width: 100%;
     height: 100%;
     border: 0;
+    filter: grayscale(0%); /* Optional: remove if you want full color map */
 }
 
-@media (max-width: 768px) {
-    .contact-hero h1 {
-        font-size: 2rem;
-    }
-    
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
     
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
     .form-row {
         grid-template-columns: 1fr;
     }
     
-    .contact-section {
-        padding: 3rem 0;
+    .contact-hero {
+        padding: 3rem 1rem;
     }
 }
 </style>
 
-<section class="hero">
-    <div>
-        <h1>Contact Us</h1>
-        <p>We're here to help with all your RV needs</p>
-    </div>
+<section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>We're here to help with all your RV needs. Reach out to us today.</p>
 </section>
 
 <section class="contact-section">
     <div class="contact-grid">
-        <!-- Contact Information -->
         <div class="contact-info">
             <div>
-                <h2>Get In Touch</h2>
-                <p>Whether you need mobile repair, shop service, or roadside assistance, we're ready to help. Fill out the form or give us a call.</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-desc">Whether you need mobile repair, shop service, or parts, we're ready to help. Stop by, call, or message us.</p>
             </div>
 
             <div class="info-item">
@@ -273,21 +316,21 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
 
             <div class="info-item">
                 <div class="info-icon">
-                    <i class="fas fa-fax"></i>
-                </div>
-                <div class="info-content">
-                    <strong>Fax</strong>
-                    <span>(580) 226-7301</span>
-                </div>
-            </div>
-
-            <div class="info-item">
-                <div class="info-icon">
                     <i class="fas fa-envelope"></i>
                 </div>
                 <div class="info-content">
                     <strong>Email</strong>
                     <a href="mailto:affservice@yahoo.com">affservice@yahoo.com</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon fb-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="info-content">
+                    <strong>Follow Us</strong>
+                    <a href="https://www.facebook.com/profile.php?id=100077690612937" target="_blank" rel="noopener noreferrer">Affordable Service of Ardmore</a>
                 </div>
             </div>
 
@@ -304,30 +347,29 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
             </div>
 
             <div class="emergency-box">
-                <h3><i class="fas fa-phone-alt"></i> 24/7 Emergency</h3>
+                <h3><i class="fas fa-exclamation-circle"></i> 24/7 Emergency</h3>
                 <p>Roadside assistance available around the clock</p>
                 <a href="tel:5807689544">(580) 768-9544</a>
             </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form">
+        <div class="contact-form-wrapper">
             <h3>Send Us a Message</h3>
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" required placeholder="(580) 555-0123">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
                 </div>
 
                 <div class="form-group">
@@ -347,11 +389,11 @@ description: Get in touch with Affordable Service of Ardmore for RV repair, mobi
 
                 <div class="form-group">
                     <label for="message">Message *</label>
-                    <textarea id="message" name="message" required placeholder="Tell us about your RV and what you need..."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your RV and what you need help with..."></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">
-                    <i class="fas fa-paper-plane"></i> Send Message
+                    Send Message <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
         </div>
