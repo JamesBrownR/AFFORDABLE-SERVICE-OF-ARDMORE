@@ -1,1 +1,380 @@
+---
+layout: default
+title: Contact Us | Affordable Service of Ardmore
+description: Get in touch with Affordable Service of Ardmore for RV repair, mobile service, and roadside assistance in Ardmore, OK.
+---
 
+<style>
+/* Contact Page Specific Styles */
+.contact-hero {
+    background: 
+        radial-gradient(circle, rgba(255,255,255,0.2) 2px, transparent 2px),
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('{{ site.baseurl }}/Pics/Hero.webp');
+    background-size: 30px 30px, cover, cover;
+    background-position: center, center, center;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact-hero p {
+    font-size: 1.25rem;
+    color: #e5e7eb;
+}
+
+.contact-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #000080;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: #f3f4f6;
+    transform: translateX(5px);
+}
+
+.info-icon {
+    width: 3rem;
+    height: 3rem;
+    background: #000080;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.info-content strong {
+    display: block;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.info-content span,
+.info-content a {
+    color: #6b7280;
+}
+
+.info-content a {
+    color: #000080;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+    color: #d60000;
+}
+
+.emergency-box {
+    background: linear-gradient(135deg, #d60000 0%, #b30000 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.emergency-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.emergency-box p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+}
+
+.emergency-box a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.contact-form {
+    background: #f9fafb;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    border-top: 4px solid #d60000;
+}
+
+.contact-form h3 {
+    font-size: 1.75rem;
+    color: #000080;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000080;
+    box-shadow: 0 0 0 3px rgba(0, 0, 128, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #d60000;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background: #b30000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.3);
+}
+
+.map-section {
+    padding: 0;
+    height: 450px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-section {
+        padding: 3rem 0;
+    }
+}
+</style>
+
+<section class="contact-hero">
+    <div>
+        <h1>Contact Us</h1>
+        <p>We're here to help with all your RV needs</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div>
+                <h2>Get In Touch</h2>
+                <p>Whether you need mobile repair, shop service, or roadside assistance, we're ready to help. Fill out the form or give us a call.</p>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                    <strong>Our Location</strong>
+                    <span>1314 S Commerce St<br>Ardmore, OK 73401</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                    <strong>Office Phone</strong>
+                    <a href="tel:5802264716">(580) 226-4716</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-fax"></i>
+                </div>
+                <div class="info-content">
+                    <strong>Fax</strong>
+                    <span>(580) 226-7301</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                    <strong>Email</strong>
+                    <a href="mailto:affservice@yahoo.com">affservice@yahoo.com</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-content">
+                    <strong>Business Hours</strong>
+                    <span>Mon - Fri: 8:30 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM<br>
+                    Sunday: Closed</span>
+                </div>
+            </div>
+
+            <div class="emergency-box">
+                <h3><i class="fas fa-phone-alt"></i> 24/7 Emergency</h3>
+                <p>Roadside assistance available around the clock</p>
+                <a href="tel:5807689544">(580) 768-9544</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service...</option>
+                        <option value="mobile-repair">Mobile Repair</option>
+                        <option value="shop-service">Shop Service</option>
+                        <option value="roadside-assistance">Roadside Assistance</option>
+                        <option value="remodel">Remodel Service</option>
+                        <option value="parts">Parts Shop</option>
+                        <option value="warranty">Insurance & Warranty</option>
+                        <option value="consignment">Consignment Sales</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your RV and what you need..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.6416476741674!2d-97.14516972523968!3d34.15550911227214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864d29601548b0d9%3A0xa1793a2066380277!2sAFFORDABLE%20SERVICE%20OF%20ARDMORE%20RV%20REPAIR!5e0!3m2!1sen!2sus!4v1765411946897!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
