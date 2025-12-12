@@ -404,7 +404,7 @@
               {src: "GDS8.webp", alt: "Heavy Duty Engine Repair"},
         ];
 
-   // --- RENDER REVIEWS ---
+ // --- RENDER REVIEWS ---
 const reviewsContainer = document.getElementById('reviews-container');
 const showMoreBtn = document.getElementById('show-more-btn');
 const REVIEWS_PER_BATCH = 6;
@@ -419,14 +419,14 @@ function renderReviews(count) {
         // Create star string
         let starHtml = '';
         for(let j = 0; j < review.rating; j++) {
-            starHtml += '<i class="fas fa-star text-yellow-400"></i>';
+            starHtml += '<i class="fas fa-star"></i>';
         }
 
         const reviewHtml = `
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm">
-                <div class="mb-3">${starHtml}</div>
-                <p class="text-gray-700 mb-4 italic">"${review.body}"</p>
-                <p class="text-gray-900 font-semibold">- ${review.name}</p>
+            <div class="review-card">
+                <div class="stars">${starHtml}</div>
+                <p class="review-text">"${review.body}"</p>
+                <p class="review-author">- ${review.name}</p>
             </div>
         `;
         reviewsContainer.innerHTML += reviewHtml;
@@ -434,7 +434,7 @@ function renderReviews(count) {
     
     currentReviewIndex = endIndex;
     
-    // Hide button if showing all and only initial batch exists
+    // Update button text
     if (currentReviewIndex >= reviewsData.length) {
         showMoreBtn.textContent = 'Show Less Reviews';
     }
