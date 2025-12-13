@@ -1,1 +1,474 @@
+---
+layout: default
+title: About Us | Affordable Service of Ardmore
+description: Learn about our 20+ years of RV repair experience, our team, and why customers trust us for mobile and shop services in Ardmore, OK.
+---
 
+<style>
+.team-photo {
+    background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-red) 100%);
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.team-photo img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--brand-red);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: var(--brand-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--brand-red);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-red));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-highlight {
+    background: linear-gradient(135deg, var(--brand-blue), #1e40af);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.testimonial-highlight blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.testimonial-author {
+    margin-top: 20px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+    .about-floating-card {
+    background: var(--white);
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* Deep shadow pops it off the screen */
+    border-top: 5px solid var(--accent-red);   /* Brand accent */
+    border-radius: 4px;
+    
+    /* The overlap magic */
+    position: absolute;
+    top: 50%;
+    right: 0; 
+    transform: translateY(-50%); /* Centers it vertically relative to image */
+}
+
+.about-checks li {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+    .about-image-bg { width: 100% !important; height: 300px !important; margin-bottom: 20px; }
+    .about-floating-card { position: relative; top: 0; transform: none; right: 0; max-width: 100%; }
+}
+</style>
+
+<!-- Hero Section -->
+<section class="relative hero h-[90vh] flex items-center justify-center text-white">
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/75 z-10"></div>
+    <div class=" container mx-auto px-6 relative z-10 text-center">
+                
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" >
+            About Affordable Service</span>
+        </h1>
+        <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+            Over 20 years of dedicated RV repair service in Ardmore, Oklahoma
+        </p>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">60</div>
+                <div class="stat-label">Mile Radius</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Emergency Service</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Commitment</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-brand-blue mb-6">Our Story</h2>
+                <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+                    <p>
+                        Affordable Service of Ardmore, Inc. has been serving the RV community for over two decades. What started as a side gig providing honest, reliable RV repair has grown into one of the most trusted names in Southern Oklahoma.
+                    </p>
+                    <p>
+                        We know all types of RVs. Bumper pulls, 5th wheels, motorhomes, name it. When you need mobile repair at your campsite or bring your RV to our onsite shop, we'll know what to do.
+                    </p>
+                    <p>
+                        From AC and furnace repairs to electrical systems, slide-outs, plumbing, and leveling jacks. We take pride in our workmanship, customer service, and clear communication every step of the way.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="testimonial-highlight">
+                    <blockquote>
+                        "Brian responded quickly, diagnosed the problem efficiently, and had us up and running in less than an hour. Thanks for saving our vacation!"
+                    </blockquote>
+                    <div class="testimonial-author">— Beverly Sadler</div>
+                </div>
+                
+                <div class="testimonial-highlight">
+                    <blockquote>
+                        "I can't believe this place exists in Ardmore. They're honest, very knowledgeable, and a breath of fresh air."
+                    </blockquote>
+                    <div class="testimonial-author">— Timothy Trumble</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Sets Us Apart -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-blue mb-4">What Sets Us Apart</h2>
+            <p class="text-gray-600 text-lg">
+                Our commitment to excellence shows in every RV we touch. Customers trust us because we go the extra mile.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Craftsmanship</h3>
+                <p class="text-gray-600">
+                    Over 20 years of hands-on experience working with all major RV brands like Keystone, Grand Design, Thor, and more. We know these units inside and out.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Clear Communication</h3>
+                <p class="text-gray-600">
+                    We explain what we'll do and why. No surprises. No confusion. Just honest service and clear pricing.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Rapid Response</h3>
+                <p class="text-gray-600">
+                    Emergency repairs completed within an hour. We know your vacation or livelihood depends on getting back on the road quickly.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Warranty & Insurance</h3>
+                <p class="text-gray-600">
+                    We handle the paperwork for most secondary warranties and insurance claims. We deal with the hassle, you focus on adventure.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Mobile Service</h3>
+                <p class="text-gray-600">
+                    We come to you within a 60-mile radius of Ardmore. No need to find a way to haul your RV to a shop.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Honest Service</h3>
+                <p class="text-gray-600">
+                    We don't upsell or exaggerate. A simple fix is simple work. Fair pricing and integrity are at our core.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet Our Team -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-blue mb-4">Meet Our Team</h2>
+            <p class="text-gray-600 text-lg">
+                The dedicated professionals who make it all happen.
+            </p>
+        </div>
+
+        <!-- Main Team Photo Feature -->
+        <div class="max-w-6xl mx-auto mb-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="team-photo">
+                    <img src="{{ site.baseurl }}/Pics/your-shop-image.jpg" alt="Affordable Service team working on an RV" style="max-height: 35rem;" class="h-auto">
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold text-brand-blue mb-6">Real Technicians. Real Results.</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        This is us doing what we do best: fixing RVs and getting people back on the road. Our team includes highly skilled technicians like Brian, Ray, Fred, and Anthony who bring years of hands-on experience to every job.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        We approach every job with the same commitment to quality. From an emergency repair to complex lighting.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-brand-red mb-2">20+</div>
+                            <div class="text-sm text-gray-600 font-semibold">Years Combined Experience</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-brand-red mb-2">100%</div>
+                            <div class="text-sm text-gray-600 font-semibold">Dedicated to Quality</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Details -->
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Technicians Card -->
+                <div class="bg-gradient-to-br from-blue-900 to-red-900 text-white p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-white/20 p-3 rounded-full mr-4">
+                            <i class="fas fa-tools text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Expert Technicians</h3>
+                    </div>
+                    
+                    <p class="text-gray-100 mb-6">
+                        Our certified technicians are the backbone of our operation. Each team member brings specialized knowledge and a passion for problem-solving.
+                    </p>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mr-3 mt-1"></i>
+                            <span>Factory-trained on major RV brands</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle  mr-3 mt-1"></i>
+                            <span>Friendly, professional, and respectful</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle  mr-3 mt-1"></i>
+                            <span>Patient educators who explain repairs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mr-3 mt-1"></i>
+                            <span>Available for emergency roadside service</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Office & Support Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl border-2 border-gray-200">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-brand-red p-3 rounded-full mr-4">
+                            <i class="fas fa-headset text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-blue">Office & Support</h3>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">
+                        Our office team, including Christy and our front desk staff, ensures smooth scheduling, warranty processing, and exceptional customer support.
+                    </p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-red">
+                        <div class="flex items-start mb-3">
+                            <i class="fas fa-quote-left text-brand-red text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700 italic">
+                                "Christie is extremely knowledgeable and helpful getting issues resolved quickly and efficiently."
+                            </p>
+                        </div>
+                        <p class="font-semibold text-brand-blue text-right">— Allen McDonald</p>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-300">
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-phone text-brand-red mr-2"></i>
+                            Ready to help you Monday - Friday, 8AM - 5PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Customer Testimonials -->
+<section class="py-10 bg-brand-blue text-white">
+    <div style="align-items: center;display: flex; flex-direction: column;" class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold ">Why Customers Choose Us</h2>
+            <p class="text-gray-200 text-lg">Don't just take our word for it</p>
+        </div>
+
+
+        <div style="color:white" class="flex flex-wrap justify-center gap-8" id="reviews-container">
+            </div>
+        <button id="show-more-btn" class="mb-5 mt-5 border border-white px-6 py-2 rounded hover:bg-white hover:text-brand-blue transition">Show More Reviews</button>
+   
+
+    </div>
+</section>
+
+<!-- Service Area -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-brand-blue mb-6">Our Service Area</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                We proudly serve Ardmore, OK and nearby areas in a 60-mile radius (including popular destinations like Lake Murray State Park and Lake Texoma). It doesn't matter if you're a local or just passing, we're here to help.
+            </p>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-bold text-brand-blue mb-6">Visit Our Shop</h3>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3"><i class="fas fa-clock text-brand-red mr-2"></i> Summer Hours</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span>Monday - Friday</span>
+                                <span class="font-semibold">8:00 AM - 5:00 PM</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span>Saturday</span>
+                                <span class="font-semibold">10:00 AM - 2:00 PM</span>
+                            </li>
+                            <li class="flex justify-between text-gray-400">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 p-4 bg-red-50 rounded-lg">
+                            <p class="text-sm font-bold text-red-600 uppercase mb-1">
+                                <i class="fas fa-phone-alt mr-2"></i> 24/7 Emergency
+                            </p>
+                            <a href="tel:5807689544" class="text-xl font-black text-brand-blue hover:text-brand-red transition">
+                                (580) 768-9544
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3"><i class="fas fa-map-marker-alt text-brand-red mr-2"></i> Location</h4>
+                        <p class="text-gray-600 mb-4">
+                            1314 S Commerce St<br>
+                            Ardmore, OK 73401
+                        </p>
+                        <h4 class="font-bold text-gray-800 mb-3 mt-6"><i class="fas fa-phone text-brand-red mr-2"></i> Contact</h4>
+                        <p class="text-gray-600 mb-2">
+                            <strong>Office:</strong> <a href="tel:5802264716" class="text-brand-blue hover:text-brand-red">(580) 226-4716</a>
+                        </p>
+                        <p class="text-gray-600 mb-2">
+                            <strong>Fax:</strong> (580) 226-7301
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Email:</strong> <a href="mailto:affservice@yahoo.com" class="text-brand-blue hover:text-brand-red">affservice@yahoo.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 bg-brand-blue text-white text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-4">Get Your RV Fixed Right?</h2>
+        <p class="text-xl mb-8 text-gray-200">Stop by or give us a call to schedule your service today</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:5802264716" class="bg-brand-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition inline-block">
+                <i class="fas fa-phone mr-2"></i> Call Now
+            </a>
+            <a href="/contact" class="bg-white text-brand-blue hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition inline-block">
+                <i class="fas fa-envelope mr-2"></i> Contact Us
+            </a>
+        </div>
+    </div>
+  </section>
