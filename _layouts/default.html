@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="{{ page.lang | default: 'en' }}" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
+    <!-- hreflang tags for SEO -->
+    {% if page.lang %}
+        {% if page.lang == 'en' %}
+            <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url }}" />
+            <link rel="alternate" hreflang="es" href="{{ site.url }}/es{{ page.url }}" />
+            <link rel="alternate" hreflang="x-default" href="{{ site.url }}/en{{ page.url }}" />
+        {% elsif page.lang == 'es' %}
+            <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url | replace: '/es/', '/en/' }}" />
+            <link rel="alternate" hreflang="es" href="{{ site.url }}/es{{ page.url }}" />
+            <link rel="alternate" hreflang="x-default" href="{{ site.url }}/en{{ page.url | replace: '/es/', '/en/' }}" />
+        {% endif %}
+    {% endif %}
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,8 +34,8 @@
                     },
                     colors: {
                         brand: {
-                            blue: '#0f172a', /* Modern Navy (Slate-900) */
-                            red: '#dc2626',  /* Modern Red (Red-600) */
+                            blue: '#0f172a',
+                            red: '#dc2626',
                             light: '#f3f4f6',
                         }
                     }
@@ -31,20 +43,15 @@
             }
         }
     </script>
- {% include css.html %}  
+    {% include css.html %}  
     {% include schema.html %}     
 </head>
 <body class="font-sans text-gray-700 antialiased bg-gray-50">
-
     {% include nav.html %}
-
     <main>
         {{ content }}
     </main>
-
     {% include footer.html %}
-
     {% include scripts.html %}
-
 </body>
 </html>
