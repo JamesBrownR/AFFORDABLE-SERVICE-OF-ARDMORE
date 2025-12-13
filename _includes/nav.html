@@ -1,5 +1,5 @@
 <nav style="position: sticky; z-index: 50000; background: white; padding: 15px 0; border-bottom: 4px solid var(--primary-blue);">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="container" style="gap: 1rem; display: flex; justify-content: space-between; align-items: center;">
         <!-- Logo - always links to current language home -->
         <a style="margin: 0 3.5rem" href="/{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}/" class="logo">
             <img src="{{ site.baseurl }}/Pics/Logo.png" alt="Affordable Service of Ardmore" style="height: 60px;">
@@ -25,7 +25,7 @@
         </ul>
         
         <!-- Phone Button and Language Switcher -->
-        <ul class="btnnav" style="display: flex; flex-wrap:wrap; justify-content: center; gap: 15px; font-weight: 600; align-items: center;">
+        <ul class="btnnav" style="display: flex; flex-wrap:nowrap; justify-content: center; gap: 15px; font-weight: 600; align-items: center;">
             <li>
                 <a href="tel:5802264716" class="btnnav logo btn btn-primary" style="padding: 8px 15px;">
                     (580) 226-4716
