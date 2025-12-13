@@ -1,1 +1,464 @@
+---
+layout: default
+title: Acerca de Nosotros | Affordable Service of Ardmore
+description: Conozca nuestros más de 20 años de experiencia en reparación de RV, nuestro equipo y por qué los clientes confían en nosotros para servicios móviles y de taller en Ardmore, OK.
+lang: es
+---
 
+<style>
+.team-photo {
+    background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-red) 100%);
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.team-photo img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--brand-red);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: var(--brand-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--brand-red);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-red));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-highlight {
+    background: linear-gradient(135deg, var(--brand-blue), #1e40af);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.testimonial-highlight blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.testimonial-author {
+    margin-top: 20px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.about-floating-card {
+    background: var(--white);
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border-top: 5px solid var(--accent-red);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    right: 0; 
+    transform: translateY(-50%);
+}
+
+.about-checks li {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+    .about-image-bg { width: 100% !important; height: 300px !important; margin-bottom: 20px; }
+    .about-floating-card { position: relative; top: 0; transform: none; right: 0; max-width: 100%; }
+}
+</style>
+
+<!-- Hero Section -->
+<section class="relative hero h-[90vh] flex items-center justify-center text-white">
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/75 z-10"></div>
+    <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Acerca de Affordable Service
+        </h1>
+        <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+            Más de 20 años de servicio dedicado a la reparación de RV en Ardmore, Oklahoma
+        </p>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Años de Experiencia</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">60</div>
+                <div class="stat-label">Millas de Radio</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Servicio de Emergencia</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Compromiso</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-brand-blue mb-6">Nuestra Historia</h2>
+                <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+                    <p>
+                        Affordable Service of Ardmore, Inc. ha estado sirviendo a la comunidad de RV durante más de dos décadas. Lo que comenzó como un trabajo secundario proporcionando reparaciones honestas y confiables de RV se ha convertido en uno de los nombres más confiables en el sur de Oklahoma.
+                    </p>
+                    <p>
+                        Conocemos todo tipo de RVs. Remolques, quintas ruedas, casas rodantes, lo que sea. Ya sea que necesite reparación móvil en su sitio de acampada o traiga su RV a nuestro taller en sitio, sabremos qué hacer.
+                    </p>
+                    <p>
+                        Desde reparaciones de aire acondicionado y hornos hasta sistemas eléctricos, extensiones, plomería y gatos niveladores. Nos enorgullecemos de nuestra artesanía, servicio al cliente y comunicación clara en cada paso del camino.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="testimonial-highlight">
+                    <blockquote>
+                        "Brian respondió rápidamente, diagnosticó el problema eficientemente y nos puso en marcha en menos de una hora. ¡Gracias por salvar nuestras vacaciones!"
+                    </blockquote>
+                    <div class="testimonial-author">— Beverly Sadler</div>
+                </div>
+                
+                <div class="testimonial-highlight">
+                    <blockquote>
+                        "No puedo creer que este lugar exista en Ardmore. Son honestos, muy conocedores y un soplo de aire fresco."
+                    </blockquote>
+                    <div class="testimonial-author">— Timothy Trumble</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Sets Us Apart -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-blue mb-4">Lo Que Nos Distingue</h2>
+            <p class="text-gray-600 text-lg">
+                Nuestro compromiso con la excelencia se muestra en cada RV que tocamos. Los clientes confían en nosotros porque hacemos un esfuerzo adicional.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Artesanía Experta</h3>
+                <p class="text-gray-600">
+                    Más de 20 años de experiencia práctica trabajando con todas las marcas principales de RV como Keystone, Grand Design, Thor y más. Conocemos estas unidades por dentro y por fuera.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Comunicación Clara</h3>
+                <p class="text-gray-600">
+                    Explicamos lo que haremos y por qué. Sin sorpresas. Sin confusión. Solo servicio honesto y precios claros.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Respuesta Rápida</h3>
+                <p class="text-gray-600">
+                    Reparaciones de emergencia completadas en menos de una hora. Sabemos que sus vacaciones o sustento dependen de volver a la carretera rápidamente.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Garantía y Seguro</h3>
+                <p class="text-gray-600">
+                    Manejamos el papeleo para la mayoría de las garantías secundarias y reclamos de seguros. Nosotros nos encargamos de la molestia, usted se concentra en la aventura.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Servicio Móvil</h3>
+                <p class="text-gray-600">
+                    Vamos a usted dentro de un radio de 60 millas de Ardmore. No necesita encontrar una manera de llevar su RV a un taller.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Servicio Honesto</h3>
+                <p class="text-gray-600">
+                    No vendemos de más ni exageramos. Una reparación simple es trabajo simple. Los precios justos y la integridad están en nuestro núcleo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet Our Team -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-blue mb-4">Conozca a Nuestro Equipo</h2>
+            <p class="text-gray-600 text-lg">
+                Los profesionales dedicados que hacen que todo suceda.
+            </p>
+        </div>
+
+        <!-- Main Team Photo Feature -->
+        <div class="max-w-6xl mx-auto mb-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="team-photo">
+                    <img src="{{ site.baseurl }}/Pics/your-shop-image.jpg" alt="Equipo de Affordable Service trabajando en un RV" style="max-height: 35rem;" class="h-auto">
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold text-brand-blue mb-6">Técnicos Reales. Resultados Reales.</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Esto es lo que hacemos mejor: arreglar RVs y hacer que las personas vuelvan a la carretera. Nuestro equipo incluye técnicos altamente calificados como Brian, Ray, Fred y Anthony que aportan años de experiencia práctica a cada trabajo.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Abordamos cada trabajo con el mismo compromiso de calidad. Desde una reparación de emergencia hasta iluminación compleja.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-brand-red mb-2">20+</div>
+                            <div class="text-sm text-gray-600 font-semibold">Años de Experiencia Combinada</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-brand-red mb-2">100%</div>
+                            <div class="text-sm text-gray-600 font-semibold">Dedicados a la Calidad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Details -->
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Technicians Card -->
+                <div class="bg-gradient-to-br from-blue-900 to-red-900 text-white p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-white/20 p-3 rounded-full mr-4">
+                            <i class="fas fa-tools text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Técnicos Expertos</h3>
+                    </div>
+                    
+                    <p class="text-gray-100 mb-6">
+                        Nuestros técnicos certificados son la columna vertebral de nuestra operación. Cada miembro del equipo aporta conocimientos especializados y pasión por resolver problemas.
+                    </p>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mr-3 mt-1"></i>
+                            <span>Capacitados en fábrica en las principales marcas de RV</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mr-3 mt-1"></i>
+                            <span>Amables, profesionales y respetuosos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mr-3 mt-1"></i>
+                            <span>Educadores pacientes que explican las reparaciones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mr-3 mt-1"></i>
+                            <span>Disponibles para servicio de emergencia en carretera</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Office & Support Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl border-2 border-gray-200">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-brand-red p-3 rounded-full mr-4">
+                            <i class="fas fa-headset text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-blue">Oficina y Soporte</h3>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">
+                        Nuestro equipo de oficina, incluida Christy y nuestro personal de recepción, garantiza una programación fluida, procesamiento de garantías y un servicio al cliente excepcional.
+                    </p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-red">
+                        <div class="flex items-start mb-3">
+                            <i class="fas fa-quote-left text-brand-red text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700 italic">
+                                "Christie es extremadamente conocedora y útil para resolver problemas rápida y eficientemente."
+                            </p>
+                        </div>
+                        <p class="font-semibold text-brand-blue text-right">— Allen McDonald</p>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-300">
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-phone text-brand-red mr-2"></i>
+                            Listos para ayudarlo de lunes a viernes, 8AM - 5PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Testimonials -->
+<section class="py-10 bg-brand-blue text-white">
+    <div style="align-items: center;display: flex; flex-direction: column;" class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Por Qué los Clientes Nos Eligen</h2>
+            <p class="text-gray-200 text-lg">No solo confíe en nuestra palabra</p>
+        </div>
+
+        <div style="color:white" class="flex flex-wrap justify-center gap-8" id="reviews-container"></div>
+        <button id="show-more-btn" class="mb-5 mt-5 border border-white px-6 py-2 rounded hover:bg-white hover:text-brand-blue transition">Mostrar Más Reseñas</button>
+    </div>
+</section>
+
+<!-- Service Area -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-brand-blue mb-6">Nuestra Área de Servicio</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Servimos con orgullo a Ardmore, OK y áreas cercanas en un radio de 60 millas (incluyendo destinos populares como Lake Murray State Park y Lake Texoma). No importa si es local o solo está de paso, estamos aquí para ayudar.
+            </p>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-2xl font-bold text-brand-blue mb-6">Visite Nuestro Taller</h3>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3"><i class="fas fa-clock text-brand-red mr-2"></i> Horario de Verano</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span>Lunes - Viernes</span>
+                                <span class="font-semibold">8:00 AM - 5:00 PM</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span>Sábado</span>
+                                <span class="font-semibold">10:00 AM - 2:00 PM</span>
+                            </li>
+                            <li class="flex justify-between text-gray-400">
+                                <span>Domingo</span>
+                                <span>Cerrado</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 p-4 bg-red-50 rounded-lg">
+                            <p class="text-sm font-bold text-red-600 uppercase mb-1">
+                                <i class="fas fa-phone-alt mr-2"></i> Emergencia 24/7
+                            </p>
+                            <a href="tel:5807689544" class="text-xl font-black text-brand-blue hover:text-brand-red transition">
+                                (580) 768-9544
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3"><i class="fas fa-map-marker-alt text-brand-red mr-2"></i> Ubicación</h4>
+                        <p class="text-gray-600 mb-4">
+                            1314 S Commerce St<br>
+                            Ardmore, OK 73401
+                        </p>
+                        <h4 class="font-bold text-gray-800 mb-3 mt-6"><i class="fas fa-phone text-brand-red mr-2"></i> Contacto</h4>
+                        <p class="text-gray-600 mb-2">
+                            <strong>Oficina:</strong> <a href="tel:5802264716" class="text-brand-blue hover:text-brand-red">(580) 226-4716</a>
+                        </p>
+                        <p class="text-gray-600 mb-2">
+                            <strong>Fax:</strong> (580) 226-7301
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Email:</strong> <a href="mailto:affservice@yahoo.com" class="text-brand-blue hover:text-brand-red">affservice@yahoo.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 bg-brand-blue text-white text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-4">¿Listo Para Arreglar Su RV Correctamente?</h2>
+        <p class="text-xl mb-8 text-gray-200">Pase por aquí o llámenos para programar su servicio hoy</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:5802264716" class="bg-brand-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition inline-block">
+                <i class="fas fa-phone mr-2"></i> Llamar Ahora
+            </a>
+            <a href="/es/contact" class="bg-white text-brand-blue hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition inline-block">
+                <i class="fas fa-envelope mr-2"></i> Contáctenos
+            </a>
+        </div>
+    </div>
+                  </section>
