@@ -9,18 +9,18 @@
         <ul style="display: flex; flex-wrap:wrap; justify-content: center; gap: 20px; font-weight: 600;">
             {% if page.lang == 'es' %}
                 <!-- Spanish Navigation -->
-                <li><a href="/es/" class="text-blue">Inicio</a></li>
-                <li><a href="/es/services">Servicios</a></li>
-                <li><a href="/es/about">Acerca de</a></li>
-                <li><a href="/es/contact">Contacto</a></li>
-                <li><a href="/es/consignment">Consignación</a></li>
+                <li><a href="{{ site.baseurl }}/es/" class="text-blue">Inicio</a></li>
+                <li><a href="{{ site.baseurl }}/es/services">Servicios</a></li>
+                <li><a href="{{ site.baseurl }}/es/about">Acerca de</a></li>
+                <li><a href="{{ site.baseurl }}/es/contact">Contacto</a></li>
+                <li><a href="{{ site.baseurl }}/es/consignment">Consignación</a></li>
             {% else %}
                 <!-- English Navigation (default) -->
-                <li><a href="/en/" class="text-blue">Home</a></li>
-                <li><a href="/en/services">Services</a></li>
-                <li><a href="/en/about">About</a></li>
-                <li><a href="/en/contact">Contact</a></li>
-                <li><a href="/en/consignment">Consignment</a></li>
+                <li><a href="{{ site.baseurl }}/en/" class="text-blue">Home</a></li>
+                <li><a href="{{ site.baseurl }}/en/services">Services</a></li>
+                <li><a href="{{ site.baseurl }}/en/about">About</a></li>
+                <li><a href="{{ site.baseurl }}/en/contact">Contact</a></li>
+                <li><a href="{{ site.baseurl }}/en/consignment">Consignment</a></li>
             {% endif %}
         </ul>
         
@@ -35,12 +35,12 @@
             <!-- Language Switcher -->
             <li>
                 {% if page.lang == 'es' %}
-                    <a href="/en{{ page.url | replace: '/es/', '/' }}" 
+                    <a href="{{ site.baseurl }}/en{{ page.url | replace: '/es/', '/' }}" 
                        style="padding: 8px 15px; color: #0f172a; border: 2px solid #0f172a; border-radius: 5px; display: flex; align-items: center; gap: 5px;">
                         <i class="fas fa-globe"></i> English
                     </a>
                 {% else %}
-                    <a href="/es{{ page.url }}" 
+                    <a href="{{ site.baseurl }}/es{{ page.url }}" 
                        style="padding: 8px 15px; color: #0f172a; border: 2px solid #0f172a; border-radius: 5px; display: flex; align-items: center; gap: 5px;">
                         <i class="fas fa-globe"></i> Español
                     </a>
