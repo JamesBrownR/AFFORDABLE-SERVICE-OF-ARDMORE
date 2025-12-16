@@ -1,7 +1,7 @@
 <nav style="position: sticky; z-index: 50000; background: white; padding: 15px 0; border-bottom: 4px solid var(--primary-blue);">
     <div class="container" style="gap: 1rem; display: flex; justify-content: space-between; align-items: center;">
         <!-- Logo - always links to current language home -->
-        <a style="margin: 0 12rem 0 0" href="/{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}/" class="logo">
+        <a style="margin: 0 12rem 0 0" href="{{ site.baseurl }}" class="logo">
             <img src="{{ site.baseurl }}/Pics/Logo.png" alt="Affordable Service of Ardmore" style="height: 60px;">
         </a>
         
